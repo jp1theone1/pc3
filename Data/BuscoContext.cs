@@ -1,13 +1,16 @@
-using.System.collection.generic;
+using Microsoft.EntityFrameworkCore;
+using pc3.Models;
 
-namespace pc3.Models
+namespace pc3.Data
 {
-    public class categoria
+    public class BuscoContext : DbContext
     {
-        public int id { get; set; }
+        public DbSet<Producto> Productos{ get; set; }
 
-        public string NombreCategorias { get; set; }
+        public DbSet<categoria> categoria{ get; set; }
 
-        public ICollection<Producto> Producto { get; set; }
+        public BuscoContext(DbContextOptions dco) : base(dco){
+
+        }
     }
 }
