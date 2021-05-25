@@ -1,11 +1,13 @@
-using System;
+using.System.collection.generic;
 
 namespace pc3.Models
 {
-    public class ErrorViewModel
+    public class categoria
     {
-        public string RequestId { get; set; }
+        public int id { get; set; }
 
-        public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
+        public string NombreCategorias { get; set; }
+
+        public ICollection<Producto> Producto { get; set; }
     }
 }
