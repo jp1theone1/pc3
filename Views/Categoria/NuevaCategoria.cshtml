@@ -1,8 +1,11 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿     @model Categoria
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+    <h1>Nueva Categoria</h1>
+
+    <form action="" method="POST">
+        <div class="form-group">
+            <label asp-for="NombreCategoria" >Nombre de la categoria</label>
+            <input asp-for="NombreCategoria"  class="form-control">
+        </div>
+        <button class="btn btn-primary">Registrar</button>
+    </form>

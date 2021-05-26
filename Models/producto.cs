@@ -1,11 +1,18 @@
-using System;
-
-namespace pc3.Models
+namespace PracticaN3.Models
 {
-    public class ErrorViewModel
+    public class Producto
     {
-        public string RequestId { get; set; }
+        public int id { get; set; }
+        public string NombreProducto { get; set; }
+        public string Foto { get; set; }
+        public string Descripcion  { get; set; }
+        public decimal Precio {get ; set;}
+        public string Celular {get;set;}
+        public string LugarCompra{get;set;}
+        public string NombreComprador { get; set; }
+        public Categoria categoria {get;set;}
+        public int CategoriaId {get;set;}
 
-        public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
+
     }
 }
